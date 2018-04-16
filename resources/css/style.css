@@ -2,16 +2,21 @@
 body {
   font: 18px;
   font-family: helvetica;
+  margin: 0 auto;
+  line-height: 1.4rem;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .container-2 {
   width: 996px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*Banner & Navigation Bar */
@@ -30,7 +35,11 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 header img {
@@ -61,3 +70,181 @@ nav ul li {
   font-size: 2rem;
   padding: 1.5rem 5rem;
 }
+
+/*Services*/
+.services {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 8rem;
+}
+
+.service-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  margin: 0 3rem;
+
+}
+
+.service-image img{
+  width: 5rem;
+}
+
+.exams .service-image img {
+  width: 3.5rem;
+}
+
+.service {
+  text-align: center;
+  display: block;
+}
+
+.exams {
+  height: 8rem;
+}
+
+/*Philosphy & Appointments*/
+
+.philosophy-appointments {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin-right: 5%;
+  width: 35%
+}
+
+.title {
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 5rem 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.info {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+/*Footer*/
+
+footer {
+  background-color: azure;
+  padding: 4rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+
+/*Responsive changes*/
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding-top: 0rem;
+  }
+  .container-2 {
+    width: 100%;
+  }
+
+.banner {
+  height: 22rem;
+}
+
+  .banner-text {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  nav span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .banner {
+    height: 17rem;
+  }
+  .banner-text {
+    margin-top: 9rem;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .banner-text h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .services {
+    display: block;
+    margin: 3.77rem 0;
+    padding-bottom: 3.77rem;
+    height: 8rem;
+  }
+
+  .service {
+    font-size: 0.77rem;
+  }
+
+
+  .philosophy-appointments {
+    margin-top: 20rem;
+    display: block;
+
+  }
+
+  .info {
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .box {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav span {
+    margin-right: 2rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+  
+  footer span{
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
